@@ -158,3 +158,39 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: topBorder;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes topBorder {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px - 20px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: bottomBorder;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes bottomBorder {
+    0% {
+        left: calc(100% - 60px - 40px);
+    }
+    50% {
+        left: 10%;
+    }
+    100% {
+        left: calc(100% - 60px - 40px);
+    }
+}
